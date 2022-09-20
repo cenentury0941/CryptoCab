@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoCab.MainPage"
+             BackgroundColor="#151515"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Resources/Images/backgroundc.png"
+             >
+
+
+    <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="StartAndExpand"
+            Margin="0,600,0,0"
+            >
+
+
+            <Label
+                x:Name="CurrentLocation"
+                Text="Welcome to"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Start" 
+                IsVisible="false"
+                />
+
+        <Label
+                Text="CryptoCab"
+                FontSize="64"
+                FontFamily="Calibri "
+                HorizontalOptions="End"
+                IsVisible="false"
+                />
+
+        <Button
+            Text="Post Request"
+            FontSize="Medium"
+            VerticalOptions="Center"
+            Clicked="OnOpenMap"
+            TextColor="#FFFFFF"
+            HeightRequest="50"
+            BorderColor="#501178"
+            BorderWidth="2"
+            CornerRadius="15"
+            HorizontalOptions="FillAndExpand"
+            >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#290C3D"
+                          Offset="0.1" />
+                    <GradientStop Color="#0F0517"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button
+            Text="Your Requests"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnViewRequests"
+            TextColor="#FFFFFF"
+            HeightRequest="50"
+            FontSize="Medium"
+            BorderColor="#501178"
+            BorderWidth="2"
+            CornerRadius="15"
+            >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#290C3D"
+                          Offset="0.1" />
+                    <GradientStop Color="#0F0517"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <BoxView
+            Margin="39,15,39,15"
+            BackgroundColor="#000000"
+            HorizontalOptions="FillAndExpand"
+            HeightRequest="1"
+            Color="#7B24B8"
+            />
+
+        <Button
+            Text="Local Requests"
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            Clicked="OnLocalRequests"
+            TextColor="#FFFFFF"
+            HeightRequest="50"
+            FontSize="Medium"
+            BorderColor="#501178"
+            BorderWidth="2"
+            CornerRadius="15"
+            >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#290C3D"
+                          Offset="0.1" />
+                    <GradientStop Color="#0F0517"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+    </VerticalStackLayout>
+
+
+</ContentPage>

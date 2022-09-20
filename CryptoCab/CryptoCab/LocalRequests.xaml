@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
+             x:Class="CryptoCab.LocalRequests"
+             Title="Local Requests">
+
+    <Grid
+        RowDefinitions="0.6* , 0.4*"
+        ColumnDefinitions="1.0*"
+        ColumnSpacing="0"
+        RowSpacing="0"
+        Padding="0"
+        Margin="0"
+        BackgroundColor="Green"
+            >
+
+        <mapsui:MapView
+            x:Name="MapView"
+            Grid.Row="0"
+            Padding="0"
+            Margin="0"
+            Grid.RowSpan="2"
+            PinClicked="PinClicked"
+            />
+
+        <Frame
+            Grid.Row="1"
+            BackgroundColor="#00000000"
+            CornerRadius="24"
+            Margin="10"
+            >
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#ef393939"
+                          Offset="0.1" />
+                    <GradientStop Color="#fe151515"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <VerticalStackLayout
+            BackgroundColor="#00000000"
+            Margin="0,24,0,0"
+            Grid.Row="1"
+            >
+            <Grid
+                Margin="0,0,0,6"
+                >
+                <BoxView
+            Grid.Row="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="45"
+            Margin="35,0,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+                </BoxView>
+                <Label
+                    BackgroundColor="#00000000"
+                    HeightRequest="45"
+                    FontSize="Default"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Tap on a pin to view request"
+                    Margin="35,0,35,0"
+                    />
+            </Grid>
+
+
+
+
+
+            <Grid
+                Margin="0,6,0,6"
+                RowDefinitions="0.33*,0.33*,0.34*"
+                RowSpacing="5"
+                ColumnDefinitions="0.25*,0.75*"
+                >
+                <BoxView
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,6,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+                </BoxView>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Current Location"
+                    Margin="12,0,35,0"
+                    x:Name="Current"
+                    />
+
+
+                <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,0,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+                </BoxView>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Destination Location"
+                    Margin="12,0,35,0"
+                    x:Name="Destination"
+                    />
+
+                <Button
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Margin="25,0,25,0"
+                    FontSize="Medium"
+                    Text="Cost"
+                    TextColor="#39FF39"
+                    Background="#DD151515"
+                    CornerRadius="15"
+                    BorderColor="#AA393939"
+                    BorderWidth="3"
+                    x:Name="Cost"
+                    IsEnabled="False"
+                    />
+
+                <Image
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    HeightRequest="150"
+                    Source="/Resources/Images/icon.png"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Margin="39,0,0,0"
+                    />
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+
+
+        <Label
+            Text="Loading"
+            FontSize="Title"
+            TextColor="AliceBlue"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Grid.RowSpan="2"
+            Padding="0,0,0,0"
+            FontAttributes="Bold"
+            BackgroundColor="#000000"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            x:Name="Loading"    
+            />
+        <Image
+            Source="/Resources/Images/loading.gif"
+            IsAnimationPlaying="false"
+            HeightRequest="256"
+            x:Name="LoadingAnim"
+            IsVisible="false"
+            />
+
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoCab.CabSelect"
+             Title="Select Cab Type"
+             BackgroundImageSource="Resources/Images/map.png"
+             >
+    <VerticalStackLayout>
+
+
+        <Grid
+                Margin="0,6,0,6"
+                RowDefinitions="0.33*,0.33*,0.34*"
+                RowSpacing="5"
+                ColumnDefinitions="0.25*,0.75*"
+                >
+            <BoxView
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,6,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+            </BoxView>
+            <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Current Location"
+                    Margin="12,0,35,0"
+                    x:Name="Current"
+                    />
+
+
+            <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,0,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+            </BoxView>
+            <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Destination Location"
+                    Margin="12,0,35,0"
+                    x:Name="Destination"
+                    />
+
+            <Button
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Margin="25,0,25,0"
+                    FontSize="Medium"
+                    Text="Select Cab Type"
+                    Background="#DD151515"
+                    TextColor="White"
+                    CornerRadius="15"
+                    BorderColor="#AA393939"
+                    BorderWidth="3"
+                    />
+
+            <Image
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    HeightRequest="150"
+                    Source="/Resources/Images/icon.png"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Margin="39,0,0,0"
+                    />
+
+        </Grid>
+
+        <Grid
+            ColumnDefinitions="0.33*,0.33*,0.34*"
+            >
+
+            <Frame
+            x:Name="Hatchback"
+            BackgroundColor="#00000000"
+            CornerRadius="12"
+            Margin="5"
+            Grid.Column="0"
+                >
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#ef545454"
+                          Offset="0.1" />
+                        <GradientStop Color="#fe252525"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+            </Frame>
+
+            <Frame
+            x:Name="Sedan"
+            BackgroundColor="#00000000"
+            CornerRadius="12"
+            Margin="5"
+            Grid.Column="1"
+            IsVisible="false"
+                >
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#ef545454"
+                          Offset="0.1" />
+                        <GradientStop Color="#fe252525"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+            </Frame>
+
+            <Frame
+            x:Name="SUV"
+            IsVisible="false"
+            BackgroundColor="#00000000"
+            CornerRadius="12"
+            Margin="5"
+            Grid.Column="2"
+                >
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#ef545454"
+                          Offset="0.1" />
+                        <GradientStop Color="#fe252525"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+            </Frame>
+
+            <ImageButton
+                x:Name="HatchbackButton"
+                Source="Resources/Images/hatchback.png"
+                BackgroundColor="#00000000"
+                Grid.Column="0"
+                Clicked="TypeSelectHandler"
+                />
+            
+            <ImageButton
+                x:Name="SedanButton"
+                Grid.Column="1"
+                Source="Resources/Images/sedan.png"
+                Clicked="TypeSelectHandler"
+                />
+            <ImageButton
+                x:Name="SUVButton"
+                Grid.Column="2"
+                Source="Resources/Images/suv.png"
+                Clicked="TypeSelectHandler"
+                />
+        </Grid>
+
+        <Frame
+            BackgroundColor="#00000000"
+            CornerRadius="12"
+            Margin="5"
+            Grid.Column="2"
+                >
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#ef252525"
+                          Offset="0.1" />
+                    <GradientStop Color="#fe050505"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <VerticalStackLayout>
+
+                <Label
+            x:Name="CabType"
+            Text="Cab Type"
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            />
+
+                <Label 
+            x:Name="Seats"
+            Text="X Seater"
+            FontSize="Small"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,15,0,0"
+            />
+
+            <Label
+            x:Name="Desc"
+            Text="Description of the vehicle"
+            FontSize="Small"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,15,0,0"
+            />
+
+            <Label 
+            Text="Cost of the Journey"
+            FontSize="Large"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,54,0,0"
+            />
+
+            <Label
+            x:Name="RideCost"
+            Text="00.0000 ETH"
+            FontSize="Large"
+            TextColor="#AAFFAA"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,12,0,0"
+            />
+
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Button
+                    Margin="25,12,25,0"
+                    HeightRequest="75"
+                    FontSize="Medium"
+                    Text="Post Request"
+                    Background="#DD151515"
+                    TextColor="White"
+                    CornerRadius="15"
+                    BorderColor="#696969"
+                    BorderWidth="3"
+                    Clicked="PostRequestHandler"
+                    />
+        
+    </VerticalStackLayout>
+</ContentPage>

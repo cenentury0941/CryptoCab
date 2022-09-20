@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CryptoCab
+build_property.ProjectDir = D:\Project_Buffer\web3athon\Project\CryptoCab\CryptoCab\
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/AcceptRequest.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.AcceptRequest.xaml
+build_metadata.AdditionalFiles.TargetPath = AcceptRequest.xaml
+build_metadata.AdditionalFiles.RelativePath = AcceptRequest.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/CabSelect.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.CabSelect.xaml
+build_metadata.AdditionalFiles.TargetPath = CabSelect.xaml
+build_metadata.AdditionalFiles.RelativePath = CabSelect.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/LocalRequests.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.LocalRequests.xaml
+build_metadata.AdditionalFiles.TargetPath = LocalRequests.xaml
+build_metadata.AdditionalFiles.RelativePath = LocalRequests.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/MapContent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.MapContent.xaml
+build_metadata.AdditionalFiles.TargetPath = MapContent.xaml
+build_metadata.AdditionalFiles.RelativePath = MapContent.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/MapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.MapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MapPage.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/Post.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.Post.xaml
+build_metadata.AdditionalFiles.TargetPath = Post.xaml
+build_metadata.AdditionalFiles.RelativePath = Post.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/Requests.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.Requests.xaml
+build_metadata.AdditionalFiles.TargetPath = Requests.xaml
+build_metadata.AdditionalFiles.RelativePath = Requests.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Project_Buffer/web3athon/Project/CryptoCab/CryptoCab/ViewRequests.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoCab.ViewRequests.xaml
+build_metadata.AdditionalFiles.TargetPath = ViewRequests.xaml
+build_metadata.AdditionalFiles.RelativePath = ViewRequests.xaml

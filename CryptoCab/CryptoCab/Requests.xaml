@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoCab.Requests"
+             Title="Requests"
+             xmlns:mapsui="clr-namespace:Mapsui.UI.Maui;assembly=Mapsui.UI.Maui"
+             xmlns:cabtype="clr-namespace:CryptoCab"
+             >
+
+    <Grid
+        RowDefinitions="0.6* , 0.4*"
+        ColumnDefinitions="1.0*"
+        ColumnSpacing="0"
+        RowSpacing="0"
+        Padding="0"
+        Margin="0"
+        BackgroundColor="Green"
+            >
+        <mapsui:MapView
+            x:Name="MapView"
+            Grid.Row="0"
+            Padding="0"
+            Margin="0"
+            Grid.RowSpan="2"
+            />
+
+        <Frame
+            Grid.Row="1"
+            BackgroundColor="#00000000"
+            CornerRadius="24"
+            Margin="10"
+            >
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#ef393939"
+                          Offset="0.1" />
+                    <GradientStop Color="#fe151515"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+        <VerticalStackLayout
+            BackgroundColor="#00000000"
+            Margin="0,12,0,0"
+            Grid.Row="1"
+            >
+            <Grid
+                Margin="0,0,0,0"
+                >
+               
+                
+            </Grid>
+
+            <Grid
+                Margin="0,6,0,6"
+                RowDefinitions="0.33*,0.33*,0.34*"
+                RowSpacing="5"
+                ColumnDefinitions="0.25*,0.75*"
+                >
+                <BoxView
+            Grid.Row="0"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,6,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+                </BoxView>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Current Location"
+                    Margin="12,0,35,0"
+                    x:Name="Current"
+                    />
+
+
+                <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            BackgroundColor="#00000000"
+            Color="#151515"
+            HeightRequest="65"
+            Margin="12,0,35,0"
+            HorizontalOptions="CenterAndExpand"
+            CornerRadius="24"
+            VerticalOptions="Start"
+            >
+
+                </BoxView>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#00000000"
+                    HeightRequest="65"
+                    FontSize="Small"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    Text="Destination Location"
+                    Margin="12,0,35,0"
+                    x:Name="Destination"
+                    />
+
+                <VerticalStackLayout
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    >
+                <Button
+                    Margin="25,0,25,0"
+                    FontSize="Medium"
+                    Text="Select Cab Type"
+                    Background="#DD151515"
+                    TextColor="White"
+                    CornerRadius="15"
+                    BorderColor="#AA393939"
+                    BorderWidth="3"
+                    x:Name="Cost"
+                    Clicked="selectcab"
+                    />
+
+                <Button
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Margin="25,0,25,0"
+                    FontSize="Medium"
+                    Text="Select Cab Type"
+                    Background="#DD151515"
+                    TextColor="White"
+                    CornerRadius="15"
+                    BorderColor="#AA393939"
+                    BorderWidth="3"
+                    x:Name="Driver"
+                    Clicked="selectcab"
+                    />
+                </VerticalStackLayout>
+                <Image
+                    Grid.Row="0"
+                    Grid.RowSpan="2"
+                    Grid.Column="0"
+                    HeightRequest="150"
+                    Source="/Resources/Images/icon.png"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Margin="39,0,0,0"
+                    />
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+
+        <Label
+            Text="Loading"
+            FontSize="Title"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            Grid.RowSpan="2"
+            Padding="0,0,0,128"
+            FontAttributes="Bold"
+            BackgroundColor="#DD000000"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            x:Name="Loading"           
+            />
+    </Grid>
+
+
+</ContentPage>
